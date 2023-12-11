@@ -7,7 +7,7 @@ public interface Interfaz2 {
     int miMetodo21(int a, int b);
     int miMetodo22(int a, int b);
 }
-public class Clase1 implements Interfaz1, Interfaz2 {
+/**public class Clase1 implements Interfaz1, Interfaz2 {
     int miMetodo11(){
         System.out.println("Introduzca un número");
         int a = Integer.parseInt(br.readLine());
