@@ -1,20 +1,28 @@
 package principal;
+
 import java.util.ArrayList;
+
 public class Main {
-    private class A{
+    private static class A {
         int atributo1, atributo2;
-        int metodo2(){
+
+        int metodo2() {
             return atributo1 - atributo2;
         }
-    }static void metodoEstatico(){
+    }
+
+    static void metodoEstatico() {
         System.out.println("Esto es un método estático");
     }
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        ArrayList<A> arrayList;arrayList.add("cadena 1");
-        this.metodoEstatico();A.metodo2();
+        ArrayList<A> arrayList = new ArrayList<>();
+        A objetoA = new A();
+        arrayList.add(objetoA);
+
+        metodoEstatico();
+
+        objetoA.metodo2();
     }
 }
 //Ejec 46: Cuando imprimes un objeto en Java sin proporcionar un método toString() personalizado,
